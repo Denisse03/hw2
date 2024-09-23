@@ -5,7 +5,6 @@ export function getRandomWeather(location) {
   $.getJSON(baseURL, (data) => {
     console.log(data);
     getName(data);
-    getInfo(data);
   }).fail((error) => {
     console.log("error", error.message);
   });
@@ -25,8 +24,6 @@ export function getName(data) {
             <p>Sunrise: ${day.astro.sunrise}</p>
             <p>Sunset: ${day.astro.sunset}</p>
         <p>Humidity: ${day.day.avghumidity}</p>
-        
-
          </div>
       
            `);
