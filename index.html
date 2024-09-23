@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <a href="#">Login</a>
+      <a href="#">Sign Up</a>
+    </nav>
+    <div id="app">
+      <h1>Weather Application</h1>
+
+      <div class="infoWeather">
+        <input type="text" id="city" placeholder="Enter location" />
+        <button id="getWeather">Get Weather</button>
+      </div>
+
+      <div id="weather"></div>
+    </div>
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script type="module" src="app/model.js"></script>
+    <script type="module" src="app/app.js"></script>
+  </body>
+</html>
